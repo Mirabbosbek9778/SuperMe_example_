@@ -1,7 +1,12 @@
-<script setup></script>
+<script setup>
+import EditWord from "./EditWord.vue";
+</script>
 
 <template>
-  <div>Lorem</div>
+  <div>table</div>
+
+  <!-- modal -->
+  <EditWord />
 </template>
 
 <style lang="scss" scoped></style>
