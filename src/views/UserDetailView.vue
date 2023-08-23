@@ -4,6 +4,7 @@ import Message from "../components/Message.vue";
 import UserInfo from "../components/UserInfo.vue";
 import UserStats from "../components/UserStats.vue";
 </script>
+
 <template>
   <div class="">
     <h2>Максим Петров · М · 38 лет</h2>
