@@ -4,17 +4,17 @@ const navList = computed(() => [
   {
     title: "Dashboard",
     path: "/",
-    icon: "@/assets/icons/home.svg",
+    icon: "",
   },
   {
     title: "Пользователи",
     path: "/users",
-    icon: "@/assets/icons/people.svg",
+    icon: "",
   },
   {
     title: "Переводы",
     path: "/translations",
-    icon: "@/assets/icons/globe.svg",
+    icon: "",
   },
 ]);
 </script>
@@ -23,7 +23,7 @@ const navList = computed(() => [
   <div class="border">
     <ul>
       <li v-for="nav in navList" :key="nav">
-        <router-link :to="nav.path">{{ nav.title }} </router-link>
+        <router-link :to="nav.path"> {{ nav.title }} </router-link>
       </li>
     </ul>
   </div>
