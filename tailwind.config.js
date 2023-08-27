@@ -4,24 +4,24 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: {
-        navbarColor: "#3DB68A",
-        btnColor: "#2196F3",
-        delBtnColor: "#D32F2F",
+        green: "#3DB68A",
+        blue: "#2196F3",
+        red: "#D32F2F",
       },
       colors: {
         textColor: "#000000",
         textNavbar: "#FFFFFF",
       },
       fontSize: {
-        fontSize: "48px",
-        fontInfo: "24px",
-        fontNavbar: "20px",
-        fontDefault: "14px",
-        btnWidth: "125px",
-        btnHight: "56px",
+        48: "48px",
+        24: "24px",
+        20: "20px",
+        14: "14px",
+        125: "125px",
+        56: "56px",
       },
       fontFamily: {
-        fontFamily: "Roboto",
+        roboto: "Roboto",
       },
       fontWeight: {
         fontBold: "400",

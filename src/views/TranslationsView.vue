@@ -5,7 +5,7 @@ import EmptyTable from "../components/EmptyTable.vue";
 
 <template>
   <div class="w-full">
-    <p class="text-fontSize px-[19px] pt-16">Переводы</p>
+    <p class="text-48 e px-[19px] pt-16">Переводы</p>
     <TranslateTable v-if="true" />
     <EmptyTable v-else />
   </div>
