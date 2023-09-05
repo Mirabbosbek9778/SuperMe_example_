@@ -2,19 +2,31 @@
 
 <template>
   <div
-    class="flex items-center justify-between h-16 px-4 cursor-pointer bg-green text-textNavbar font-fontFamily"
+    class="flex bg-[rgb(61,182,138)] h-16 items-center justify-between text-white font-normal wrapper"
   >
-    <div class="flex gap-4 text-fontNavbar font-fontBold">
-      <img src="@/assets//icons/MenuFilled.svg" alt="Header" />
-      <p>SuperMe</p>
+    <div class="flex pl-[30px] gap-3 cursor-pointer items-center">
+      <img src="../assets/icons/Settings.svg" alt=" Settings" />
+      <a href="/home">
+        <h1>
+          SuperMe
+        </h1>
+      </a>
     </div>
-    <div class="flex items-center gap-3 pr-3 font-fontLong text-fontDefault">
-      <p>Alex F.</p>
-      <button>
-        <img src="@/assets/icons/exit.svg" alt="" />
-      </button>
+    <div class="flex pr-8 gap-[11px]">
+      <span>Alex F.</span>
+      <a @click="showLoginPage = true">
+        <img src="../assets/icons/exitIcon.svg" alt="Exit Icon" />
+      </a>
     </div>
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+h1 {
+  font-size: 20px;
+}
+.wrapper {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+</style>

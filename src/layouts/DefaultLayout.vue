@@ -4,7 +4,7 @@ import SideBar from "../components/SideBar.vue";
 </script>
 
 <template>
-  <div class="">
+  <div>
     <Header />
     <div class="flex">
       <SideBar class="w-[280px]" />

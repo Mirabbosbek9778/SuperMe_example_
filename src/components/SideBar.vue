@@ -5,22 +5,22 @@ import { useRoute } from "vue-router";
 const navList = computed(() => [
   {
     title: "Dashboard",
-    path: "/",
-    icon: "/src/assets/icons/home.svg",
+    path: "/home",
+    icon: "/src/assets/icons/homeIcon.svg",
   },
   {
     title: "Пользователи",
     path: "/users",
-    icon: "/src/assets/icons/people.svg",
+    icon: "/src/assets/icons/peopleIcon.svg",
   },
   {
     title: "Переводы",
-    path: "/translations",
-    icon: "/src/assets/icons/globe.svg",
+    path: "/transactions",
+    icon: "/src/assets/icons/globusIcons.svg",
   },
 ]);
-const activeNavIndex = ref(null);
 
+const activeNavIndex = ref(null);
 const route = useRoute();
 
 for (let i = 0; i < navList.length; i++) {
@@ -32,20 +32,18 @@ for (let i = 0; i < navList.length; i++) {
 </script>
 
 <template>
-  <div class="border">
+  <div class="h-screen wrapper">
     <ul>
-      <li
-        v-for="(nav, index) in navList"
-        :key="nav"
-        @click="activeNavIndex = index"
-        :class="{ 'active-nav': activeNavIndex === index }"
-      >
+      <li v-for="(nav, index) in navList" :key="nav">
         <router-link outer-link :to="nav.path">
-          <div class="flex gap-8 pl-5 h-[50px] pt-5 ">
+          <div
+            class="flex items-center gap-4 py-4 pl-4"
+            @click="activeNavIndex = index"
+            :class="{ 'active-nav': activeNavIndex === index }"
+          >
             <img :src="nav.icon" alt="" />
             {{ nav.title }}
           </div>
-          <!-- <img src="@/assets/icons/home.svg" alt="" /> -->
         </router-link>
       </li>
     </ul>
@@ -53,11 +51,12 @@ for (let i = 0; i < navList.length; i++) {
 </template>
 
 <style lang="scss" scoped>
+.wrapper {
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
 .active-nav {
   background: rgba(33, 150, 243, 0.08);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px rgba(0, 0, 0, 0.25);
 }
-/* .border {
-  width: 100%;
-} */
 </style>
