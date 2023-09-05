@@ -1,7 +1,10 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+let count = ref(0);
+</script>
 
 <template>
-  <div v-if="showLoginPage" class="login-page">
+  <div class="login-page">
     <p>This is the login page.</p>
   </div>
 </template>
