@@ -14,7 +14,6 @@ const router = createRouter({
       meta: {
         layout: "empty",
       },
-      component: () => import("../views/LoginView.vue"),
     },
     {
       path: "/users",
@@ -35,3 +34,5 @@ const router = createRouter({
 });
 
 export default router;
+
+ 
