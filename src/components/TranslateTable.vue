@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    1
+    lorem
   </div>
   <EditWord />
 </template>

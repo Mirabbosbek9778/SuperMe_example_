@@ -14,7 +14,7 @@
     </div>
     <div class="flex pr-8 gap-[11px]">
       <span>Alex F.</span>
-      <a @click="showLoginPage = true">
+      <a href="/exit">
         <img src="../assets/icons/exitIcon.svg" alt="Exit Icon" />
       </a>
     </div>

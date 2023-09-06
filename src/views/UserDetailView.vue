@@ -7,7 +7,9 @@ import UserStats from "../components/UserStats.vue";
 
 <template>
   <div class="">
-    <h2 class="text-48 e px-[19px] pt-16">Максим Петров · М · 38 лет</h2>
+    <h2 class="text-48 e px-[19px] mt-16 text-5xl">
+      Максим Петров · М · 38 лет
+    </h2>
     <div class="grid grid-cols-3">
       <div class="flex flex-col">
         <UserInfo />

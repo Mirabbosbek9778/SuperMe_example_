@@ -6,7 +6,7 @@ import EmptyTable from "../components/EmptyTable.vue";
 
 <template>
   <div class="ml-[19px]">
-    <h1 class="mt-16 text-5xl ">Пользователи</h1>
+    <h1 class="mt-16 text-5xl">Пользователи</h1>
     <div class="flex items-center justify-between">
       <h4 class="mt-8 ml-3 text-2xl">Всего пользователей (6000)</h4>
       <button class="text-sm text-[#3DB68A] filter">

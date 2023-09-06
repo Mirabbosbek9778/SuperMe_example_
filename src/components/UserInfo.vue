@@ -1,15 +1,15 @@
 <script setup></script>
 
 <template>
-  <div class="w-[338px] h-[575px] pl-[19px]">
-    <h1 class="pl-[19px] text-24 pt-[31px]">Информация</h1>
-    <table class="w-full h-full mt-8">
+  <div class="w-full h-[575px] pl-[19px]">
+    <h1 class="pl-[19px] text-[24px] pt-[31px]">Информация</h1>
+    <table class="h-full mt-8 w">
       <tr class="border-b dark:border-gray-300">
-        <th>Данные</th>
+        <th class="text-nowrap">Данные</th>
         <td>RU • Push • Geo</td>
       </tr>
       <tr class="border-b dark:border-gray-300">
-        <th>Имя</th>
+        <th class="text-nowrap">Имя</th>
         <td>Максим</td>
       </tr>
       <tr class="border-b dark:border-gray-300">
@@ -62,5 +62,21 @@ th {
   font-weight: 600;
   line-height: 143%;
   letter-spacing: 0.17px;
+  /* white-space: nowrap; */
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis; */
+  display: flex;
+  align-items: flex-start;
+}
+th.text-nowrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* padding-right: 50px; */
+  display: flex;
+  align-items: flex-start;
+}
+.border-b {
+  padding-left: 10px;
 }
 </style>
