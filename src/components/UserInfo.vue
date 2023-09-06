@@ -62,9 +62,6 @@ th {
   font-weight: 600;
   line-height: 143%;
   letter-spacing: 0.17px;
-  /* white-space: nowrap; */
-  /* overflow: hidden; */
-  /* text-overflow: ellipsis; */
   display: flex;
   align-items: flex-start;
 }
@@ -72,7 +69,6 @@ th.text-nowrap {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  /* padding-right: 50px; */
   display: flex;
   align-items: flex-start;
 }
@@ -80,3 +76,5 @@ th.text-nowrap {
   padding-left: 10px;
 }
 </style>
+
+
