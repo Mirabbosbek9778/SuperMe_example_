@@ -15,7 +15,16 @@
       </div>
       <div class="btn-filter">
         <button class="bg-[#3DB68A] h-14 w-14 flex justify-center items-center">
-          <img src="../../assets/icons/filterIcon.svg" alt="filter" />
+          <div class="dropdown">
+            <button class="dropButton">
+              <img src="../../assets/icons/filterIcon.svg" alt="filter" />
+            </button>
+            <ul v-if="isOpen" class="dropdown-menu">
+              <li><a href="#">Item 1</a></li>
+              <li><a href="#">Item 2</a></li>
+              <li><a href="#">Item 3</a></li>
+            </ul>
+          </div>
         </button>
         <button class="bg-[#2196F3] w-[125px] h-14 text-white">Найти</button>
       </div>
@@ -24,6 +33,38 @@
 </template>
 
 <style lang="scss" scoped>
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropButton {
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #d82b2b;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 0;
+}
+.dropdown-menu li {
+  padding: 10px;
+}
+.dropdown-menu a {
+  text-decoration: none;
+  color: #333;
+}
+.dropdown-menu li:hover {
+  background-color: #f2f2f2;
+}
+.isOpen + .dropdown-menu {
+  display: block;
+}
 .btn-filter {
   display: flex;
   align-items: center;
