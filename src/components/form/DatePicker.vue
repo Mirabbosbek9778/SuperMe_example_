@@ -21,7 +21,7 @@
     </div>
     <div class="input-group w-[113px]">
       <label class="input-group__label" for="myInput">Пол</label>
-      <select name="" id="" class="input-group__input h-14 ">
+      <select name="" id="" class="input-group__input h-14">
         <option value="">М</option>
         <option value="">Ж</option>
         <option value="">М1</option>

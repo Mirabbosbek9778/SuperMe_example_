@@ -19,16 +19,7 @@ const navList = computed(() => [
     icon: "/src/assets/icons/globusIcons.svg",
   },
 ]);
-
 const activeNavIndex = ref(null);
-const route = useRoute();
-
-for (let i = 0; i < navList.length; i++) {
-  if (navList[i].path === route.path) {
-    activeNavIndex.value = i;
-    break;
-  }
-}
 </script>
 
 <template>
