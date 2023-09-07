@@ -5,8 +5,7 @@ import EditWord from "./EditWord.vue";
 <template>
   <div>
     lorem
-  <EditWord />
+    <EditWord />
   </div>
 </template>
-
-<style lang="scss" scoped>
+<style lang="scss" scoped></style>
