@@ -1,11 +1,11 @@
-<script setup></script>
+<script setup>
+import EditWord from "./EditWord.vue";
+</script>
 
 <template>
   <div>
     lorem
+    <EditWord />
   </div>
-  <EditWord />
 </template>
-
-<style lang="scss" scoped>
->
+<style lang="scss" scoped></style>
