@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import EditWord from "./EditWord.vue";
+</script>
 
 <template>
   <div>
@@ -8,4 +10,3 @@
 </template>
 
 <style lang="scss" scoped>
->
